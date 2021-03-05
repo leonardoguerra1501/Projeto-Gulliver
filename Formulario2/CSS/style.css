@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&amp;family=Open+Sans+Condensed:wght@300&amp;display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: 'Lato', sans-serif;
+}
+body{
+    background-color: #5E69FA;
+    background-size: cover;
+    color: #FADA5F;
+}
+h3{
+    text-align: center;
+    margin: 5px;
+}
+.formulario {
+    width: 500px;
+    height: auto;
+    margin: 10px auto;
+    border: solid 1px;
+    border-radius: 10px;
+    background-color: #3139AD;
+}
+fieldset {
+    padding: 8px;
+    margin: 15px;
+}
+input,label {
+    margin: 10px 0px;
+    display: block;
+    width: 90%;
+}
+.campos {
+    margin: 15px;
+    border-radius: 15px;
+
+}
+.seletor_radio{
+  display: flex;
+  align-items: center;   
+  justify-content: flex-start;
+}
+
+.arquivo {
+    margin: 10px 0;
+}
+button{
+    width: 100px;
+    height: 50px;
+    margin: 10px auto;
+    border-radius: 20px;
+    display: block;
+    text-transform: uppercase;
+    background-color: #5E69FA;
+    color: #FADA5F;
+    font-weight: 900;
+}
+button:hover{
+    background-color: #FADA5F;
+    color: #5E69FA;
+
+}

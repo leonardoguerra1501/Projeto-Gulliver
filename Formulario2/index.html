@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Projeto Gulliver</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <form class="formulario" action="" method="POST">
+
+            <h3>Cadastro de pontos turísticos</h3>
+
+            <!-- informações gerais -->
+            <fieldset class="campos">
+                <legend>Informações Gerais</legend>
+
+                <label for="nome">Nome do lugar</label>
+                <input type="text" id="nome" placeholder="ex: Masp" autofocus required>
+
+                <label for="estado">Estado</label>
+                <input list="estados" id="uf" required placeholder="ex: Selecione o estado" required>
+                <datalist id="estados">
+                    <option value="AC">Acre</option>
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                    <option value="EX">Estrangeiro</option>
+                </datalist>
+
+                <label for="onde">Cidade</label>
+                <input type="text" id="onde" required placeholder="São Paulo" required>
+
+                <label for="endereço"> Insira o endereço</label>
+                <input type="text" placeholder="ex: Av. Paulista, 1578 - Bela Vista, São Paulo - SP, 01310-200" required>
+            </fieldset>
+
+            <!-- informações adicionais -->
+            <fieldset class="campos">
+                <legend>Informações adicionais</legend>
+
+                <label for="quando">Quando Visitar:</label>
+                <div class="seletor_radio">
+
+                    <input type="radio" id="turno1" name="turno">
+                    <label for="turno1">Manhã</label>
+
+                    <input type="radio" id="turno2" name="turno">
+                    <label for="turno2">Tarde</label>
+
+                    <input type="radio" id="turno3" name="turno">
+                    <label for="turno3">Noite</label>
+
+                </div>
+        
+                    <label for="quanto">Quanto R$ levar?</label>
+                    <input type="range" id="quanto">
+
+
+                <div class="arquivo">
+                    <label for="imagem">Coloque uma imagem:</label>
+                    <input type="file">
+                </div>
+
+            </fieldset>
+
+            <!-- contatos -->
+            <fieldset class="campos">
+                <legend>Contatos</legend>
+
+                <label for="email">E-mail</label>
+                <input type="email" placeholder="exeplo@exeplo.com">
+
+                <label for="telefone">Telefone</label>
+                <input type="tel" placeholder="(11)1234-5678"> 
+            </fieldset>
+
+            <button type="submit"> Enviar </button>
+
+        </form>
+
+
+
+    </div>
+
+</body>
+
+</html>
